@@ -1,0 +1,62 @@
+Estructuras de datos
+
+char
+void
+int		Tipos de datos.
+float
+double
+
+
+int legajo[cant];
+float salario [cant];
+char nombre[cant][31];
+int isEmpty[cant];
+
+struct Empleado{
+	int legajo;
+	char nombre[31];
+	fkiat salario;
+	int isEmpty;
+};
+
+struct Empleado emple;     Esto va en el H ... Prototipo.
+
+emple.legajo
+emple.nombre
+emple.salario
+emple.isEmpy   
+
+
+
+
+Trabajo Practico:
+
+typedef o struct{
+char dni[31];
+char apellido[31];
+char nombre[31];
+eFecha FechaNac;
+
+Crear un struct para las fechas, dia, mes y año.
+Se crean arriba del main.
+
+Se utiliza un menu.
+ePersona per[cant];
+per.fechanac.dia
+per.fechanac.mes
+per.fechanac.año
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
