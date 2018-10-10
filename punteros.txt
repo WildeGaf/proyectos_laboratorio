@@ -1,0 +1,87 @@
+Null - Espacio de memoria no reconocido, utilizado para punteros sin ningun dato asignado.
+Inicializa el puntero como Null para que no tenga guardada una direccion de memoria no asignada.
+NULL - Un espacio de memoria asignado por default para indicar que se encuentra nula.
+
+
+int nro,*ptrNro
+
+ptrNro = NULL;  Esta inicializada como NULL. 
+ptrNro = &nro;  Guarda la direccion de memoria de nro.
+*ptrNro = 15;   Guarda 15 en la posicion de memoria almacenada en el puntero.
+
+cuando se utiliza & - Se indica a una direccion de memoria, donde solo puede guardarse en un puntero
+								(ya que estos almacenan direcciones de memoria)
+
+* = Indireccion
+	Apunta al valor que se encuentra dentro del puntero.
+
+Una direccion de memoria es un numer hexadecimal, el cual se puede utilizar para saber si 
+entre dos punteros alguno tiene una direccion mayor o igual que el otro. 
+
+
+
+Punteros - Una variable que guarda una direccion de memoria de otra.
+
+Se debe asignar un valor a un puntero, ya que al no hacerlo el puntero va a tener un dato guardado
+(un espacio de memoria) que puede o no estar utilizada por el equipo.
+
+No pueden utilizar memoria que se este utilizando, en ese caso causaria un error.
+
+
+COMPARACION DE DIRECCIONES DE MEMORIA:
+
+if (ptrA > ptrB) - Compara la direccion de dos punteros(NO EL VALOR ASIGNADO A ESA MEMORIA SOLO LA DIRECCION);
+
+if (ptr != NULL) - Compara para saber si la direccion de memoria es igual a NULL;
+
+if (ptr < &variable) - Compara la direccion del puntero con la direccion de memoria de la variable
+
+if (ptr == 0xAAFF23) - Compara el ptr con la direccion de memoria;
+
+
+Aritmetica de punteros : 
+
+Incrementan o decremental la posición de memoria a la que “apunta” la variable
+puntero.
+
+
+Sirve para ir recorriendo la memoria, los int y float se desplazan de a 4 bits ya que utilizan 4 
+bits, en cambio los char de a 1.
+
+sizeoff no es una funcion, es un operador para obtener la cantidad de bits que utiliza una variable.
+“a” + (num * sizeof(tipo))
+
+p1 = &arrayInt[4];
+p2 = arrayInt;
+
+int* a[10]; asi se asigna una array de punteros;
+a[2] = &var; Asigna la direccion de var, al puntero sub indice 2;
+*a[2]; = asigna 2 a la direccion de memoria almacenada en el indice 2;
+
+
+int **punteroPuntero; Se asigna doble puntero- 
+	              Una direccion de memoria que almacena una variable con otra direccion de memoria.
+
+
+
+ptr = vec; // tiene la direccion del primer elemento del vector vec = &vec[0]
+
+    for(i=0; i<5; i++){
+        *(ptr+i) = (i+5);
+    }
+
+
+0x100 = 5		0x100 + 0 . size off(int) = 0x100
+0x104 = 6		0x100 + 1 . size off(int) = 0x104
+0x108 = 7 		0x100 + 2 . size off(int) = 0x108
+0x116 = 8		0x100 + 3 . size off(int) = 0x112
+0x119 = 9		0x100 + 4 . size off(int) = 0x116
+
+
+
+
+
+
+
+
+
